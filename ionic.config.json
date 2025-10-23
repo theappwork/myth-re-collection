@@ -1,0 +1,7 @@
+{
+  "name": "myth-re-collection",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
