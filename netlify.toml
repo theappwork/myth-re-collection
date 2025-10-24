@@ -1,0 +1,10 @@
+[build]
+    base = "/"
+    publish = "dist/"
+    command = "pnpm build"
+
+[context.production]
+    publish = "dist/"
+
+[context.deploy-preview]
+    publish = "dist/"
