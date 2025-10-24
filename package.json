@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
+    "ionic:dev": "pnpm dlx @ionic/cli serve",
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",

@@ -1,0 +1,120 @@
+[
+  {
+    "category": "myth-cloth-ex",
+    "subCategories": [
+      {
+        "name": "Bronze Saints",
+        "figures": [
+          {
+            "id": "d290f1ee-6c54-4b01-90e6-d701748f0851",
+            "name": "Figure 1",
+            "character": "Figure 1 Character",
+            "coverPhoto": "https://placehold.co/100x100"
+          },
+          {
+            "id": "04c6e90f-a34d-4bfe-ba14-0d1d8ee24f9d",
+            "name": "Figure 2",
+            "character": "Figure 2 Character",
+            "coverPhoto": "https://placehold.co/100x100"
+          },
+          {
+            "id": "af7c1fe6-d669-414e-b066-e9733f0de7a8",
+            "name": "Figure 3",
+            "character": "Figure 3 Character",
+            "coverPhoto": "https://placehold.co/100x100"
+          },
+          {
+            "id": "b2f21e11-c5b1-4d9f-9910-a68e7e741b6b",
+            "name": "Figure 4",
+            "character": "Figure 4 Character",
+            "coverPhoto": "https://placehold.co/100x100"
+          },
+          {
+            "id": "e8fd159b-57c4-4d36-9bd7-a59ca13057bb",
+            "name": "Figure 5",
+            "character": "Figure 5 Character",
+            "coverPhoto": "https://placehold.co/100x100"
+          }
+        ]
+      },
+      {
+        "name": "Golden Limited Edition",
+        "figures": [
+          {
+            "id": "d290f1ee-6c54-4b01-90e6-d701748f0851",
+            "name": "Figure 1",
+            "character": "Figure 1 Character",
+            "coverPhoto": "https://placehold.co/100x100"
+          },
+          {
+            "id": "04c6e90f-a34d-4bfe-ba14-0d1d8ee24f9d",
+            "name": "Figure 2",
+            "character": "Figure 2 Character",
+            "coverPhoto": "https://placehold.co/100x100"
+          },
+          {
+            "id": "af7c1fe6-d669-414e-b066-e9733f0de7a8",
+            "name": "Figure 3",
+            "character": "Figure 3 Character",
+            "coverPhoto": "https://placehold.co/100x100"
+          },
+          {
+            "id": "b2f21e11-c5b1-4d9f-9910-a68e7e741b6b",
+            "name": "Figure 4",
+            "character": "Figure 4 Character",
+            "coverPhoto": "https://placehold.co/100x100"
+          },
+          {
+            "id": "e8fd159b-57c4-4d36-9bd7-a59ca13057bb",
+            "name": "Figure 5",
+            "character": "Figure 5 Character",
+            "coverPhoto": "https://placehold.co/100x100"
+          }
+        ]
+      },
+      {
+        "name": "Original Color Edition",
+        "figures": [
+          {
+            "id": "d290f1ee-6c54-4b01-90e6-d701748f0851",
+            "name": "Figure 1",
+            "character": "Figure 1 Character",
+            "coverPhoto": "https://placehold.co/100x100"
+          },
+          {
+            "id": "04c6e90f-a34d-4bfe-ba14-0d1d8ee24f9d",
+            "name": "Figure 2",
+            "character": "Figure 2 Character",
+            "coverPhoto": "https://placehold.co/100x100"
+          },
+          {
+            "id": "af7c1fe6-d669-414e-b066-e9733f0de7a8",
+            "name": "Figure 3",
+            "character": "Figure 3 Character",
+            "coverPhoto": "https://placehold.co/100x100"
+          },
+          {
+            "id": "b2f21e11-c5b1-4d9f-9910-a68e7e741b6b",
+            "name": "Figure 4",
+            "character": "Figure 4 Character",
+            "coverPhoto": "https://placehold.co/100x100"
+          },
+          {
+            "id": "e8fd159b-57c4-4d36-9bd7-a59ca13057bb",
+            "name": "Figure 5",
+            "character": "Figure 5 Character",
+            "coverPhoto": "https://placehold.co/100x100"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "myth-cloth",
+    "subCategories": []
+  },
+  {
+    "category": "myth-vintage",
+    "subCategories": []
+  }
+]

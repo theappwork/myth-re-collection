@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Myth Cloth EX",
+    "slug": "myth-cloth-ex",
+    "coverPhoto": "https://placehold.co/250x150",
+    "total": 86
+  },
+  {
+    "title": "Myth Cloth",
+    "slug": "myth-cloth",
+    "coverPhoto": "https://placehold.co/250x150",
+    "total": 40
+  },
+  {
+    "title": "Myth Vintage",
+    "slug": "myth-vintage",
+    "coverPhoto": "https://placehold.co/250x150",
+    "total": 96
+  },
+  {
+    "title": "Some category",
+    "slug": "foo-bar",
+    "coverPhoto": "https://placehold.co/250x150",
+    "total": 0
+  }
+]
