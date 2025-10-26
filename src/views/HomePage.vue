@@ -20,7 +20,7 @@
 
 <script setup lang="ts">
 import {IonCol, IonContent, IonGrid, IonHeader, IonPage, IonRow, IonTitle, IonToolbar} from '@ionic/vue';
-import MythCategoryCard from "../components/MythCategoryCard.vue";
+import MythCategoryCard from "@/components/MythCategoryCard.vue";
 import {onMounted, ref} from "vue";
 
 const categoryArrayRef = ref<{ title: string, slug: string, coverPhoto: string, total: number }[]>([]);

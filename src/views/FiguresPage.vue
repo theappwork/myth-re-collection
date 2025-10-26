@@ -9,20 +9,20 @@
     <ion-content :fullscreen="true">
       <MythCategoryCard v-if="categoryRef" v-bind:category="categoryRef" v-bind:show-title="false"/>
 
-      <MythCategoryFigureGrid v-bind:sub-categories="subCategoryRef"/>
+      <MythCategoryFigureGrid v-if="subCategoryRef.length" v-bind:sub-categories="subCategoryRef"/>
     </ion-content>
   </ion-page>
 </template>
 
 <script setup lang="ts">
 import {IonContent, IonHeader, IonPage, IonTitle, IonToolbar} from "@ionic/vue";
-import MythCategoryCard from '../components/MythCategoryCard.vue';
-import MythCategoryFigureGrid from '../components/MythCategoryFigureGrid.vue';
+import MythCategoryCard from '@/components/MythCategoryCard.vue';
+import MythCategoryFigureGrid from '@/components/MythCategoryFigureGrid.vue';
 import {useRoute} from 'vue-router';
 import {onMounted, ref, watch} from "vue";
 
-const router = useRoute();
-const {slug} = router.params;
+const route = useRoute();
+const {slug} = route.params;
 
 const categoryRef = ref<{ title: string, slug: string, coverPhoto: string, total: number }>();
 const subCategoryRef = ref<{

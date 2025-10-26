@@ -1,0 +1,82 @@
+[
+  {
+    "id": "d290f1ee-6c54-4b01-90e6-d701748f0851",
+    "photos": [
+      "https://placehold.co/100x200",
+      "https://placehold.co/100x200",
+      "https://placehold.co/100x200"
+    ],
+    "originalName": "Original Name 1",
+    "character": "Character 1",
+    "cloth": "Cloth",
+    "releaseDate": "2020-01-01",
+    "price": "8600",
+    "edition": "Golden Limited Edition",
+    "content": "TBD",
+    "officialSite": "https://www.example.com/"
+  },
+  {
+    "id": "04c6e90f-a34d-4bfe-ba14-0d1d8ee24f9d",
+    "photos": [
+      "https://placehold.co/100x200",
+      "https://placehold.co/100x200",
+      "https://placehold.co/100x200"
+    ],
+    "originalName": "Original Name 2",
+    "character": "Character 2",
+    "cloth": "Cloth",
+    "releaseDate": "2020-01-01",
+    "price": "8600",
+    "edition": "Golden Limited Edition",
+    "content": "TBD",
+    "officialSite": "https://www.example.com/"
+  },
+  {
+    "id": "af7c1fe6-d669-414e-b066-e9733f0de7a8",
+    "photos": [
+      "https://placehold.co/100x200",
+      "https://placehold.co/100x200",
+      "https://placehold.co/100x200"
+    ],
+    "originalName": "Original Name 3",
+    "character": "Character 3",
+    "cloth": "Cloth",
+    "releaseDate": "2020-01-01",
+    "price": "8600",
+    "edition": "Golden Limited Edition",
+    "content": "TBD",
+    "officialSite": "https://www.example.com/"
+  },
+  {
+    "id": "b2f21e11-c5b1-4d9f-9910-a68e7e741b6b",
+    "photos": [
+      "https://placehold.co/100x200",
+      "https://placehold.co/100x200",
+      "https://placehold.co/100x200"
+    ],
+    "originalName": "Original Name 4",
+    "character": "Character 4",
+    "cloth": "Cloth",
+    "releaseDate": "2020-01-01",
+    "price": "8600",
+    "edition": "Golden Limited Edition",
+    "content": "TBD",
+    "officialSite": "https://www.example.com/"
+  },
+  {
+    "id": "e8fd159b-57c4-4d36-9bd7-a59ca13057bb",
+    "photos": [
+      "https://placehold.co/100x200",
+      "https://placehold.co/100x200",
+      "https://placehold.co/100x200"
+    ],
+    "originalName": "Original Name 5",
+    "character": "Character 5",
+    "cloth": "Cloth",
+    "releaseDate": "2020-01-01",
+    "price": "8600",
+    "edition": "Golden Limited Edition",
+    "content": "TBD",
+    "officialSite": "https://www.example.com/"
+  }
+]

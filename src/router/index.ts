@@ -1,7 +1,7 @@
 import {createRouter, createWebHistory} from '@ionic/vue-router';
 import {RouteRecordRaw} from 'vue-router';
-import HomePage from '../views/HomePage.vue'
-import FiguresPage from '../views/FiguresPage.vue'
+import HomePage from '@/views/HomePage.vue'
+import FiguresPage from '@/views/FiguresPage.vue'
 
 const routes: Array<RouteRecordRaw> = [
     {
@@ -21,7 +21,7 @@ const routes: Array<RouteRecordRaw> = [
     {
         path: '/categories/:slug/figures/:id',
         name: 'Figures',
-        component: () => import('../views/FigureDetailPage.vue')
+        component: () => import('@/views/FiguresDetailPage.vue')
     },
 ]
 

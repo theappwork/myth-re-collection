@@ -4,7 +4,9 @@
     <ion-card-header v-if="showTitle">
       <ion-card-title>{{ category.title }}</ion-card-title>
     </ion-card-header>
+
     <ion-img :src="category.coverPhoto" :alt="category.title"/>
+
     <ion-card-content>
       <progress value="36" :max="category.total" :data-coming-soon="category.total === 0 ? true : undefined"/>
     </ion-card-content>
