@@ -1,8 +1,12 @@
+1
 <template>
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
-        <ion-title><!--No title--></ion-title>
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/home"/>
+        </ion-buttons>
+        <ion-title>{{ categoryRef?.title }}</ion-title>
       </ion-toolbar>
     </ion-header>
 
@@ -15,35 +19,43 @@
 </template>
 
 <script setup lang="ts">
-import {IonContent, IonHeader, IonPage, IonTitle, IonToolbar} from "@ionic/vue";
+import {
+  IonBackButton,
+  IonButtons,
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+  onIonViewWillEnter
+} from "@ionic/vue";
 import MythCategoryCard from '@/components/MythCategoryCard.vue';
 import MythCategoryFigureGrid from '@/components/MythCategoryFigureGrid.vue';
-import {useRoute} from 'vue-router';
-import {onMounted, ref, watch} from "vue";
+import {inject, onMounted, ref} from "vue";
+import {useRouter} from "vue-router";
 
-const route = useRoute();
-const {slug} = route.params;
+const router = useRouter();
+const {showErrorToast} = inject<any>('toast');
+const {selectedCategory} = inject<any>('selectedCategory');
+const categoryRef = ref<MythCategory | undefined>(selectedCategory.value);
+const subCategoryRef = ref<MythCategorySubcategory[]>([]);
 
-const categoryRef = ref<{ title: string, slug: string, coverPhoto: string, total: number }>();
-const subCategoryRef = ref<{
-  name: string,
-  figures: { id: string, name: string, character: string, coverPhoto: string }[]
-}[]>([]);
-
-onMounted(async () => {
-  await fetch('/myth-categories.json')
-      .then(response => response.json())
-      .then(data => data.find((category: any) => category.slug === slug))
-      .then(category => categoryRef.value = category)
-      .catch(error => console.error(error));
+onIonViewWillEnter(() => {
+  if (selectedCategory.value) {
+    return;
+  }
+  return router.replace('/home');
 });
 
-watch(categoryRef, async (newValue) => {
+onMounted(async () => {
   await fetch('/myth-figures.json')
       .then(response => response.json())
-      .then(data => data.find((figure: any) => figure.category === newValue?.slug))
+      .then(data => data.find((figure: any) => figure.category === categoryRef?.value?.slug))
       .then(data => subCategoryRef.value = data.subCategories)
-      .catch(error => console.error(error));
+      .catch(error => {
+        showErrorToast(`Failed to load sub-lines`);
+        console.error(error);
+      });
 });
 </script>
 

@@ -1,7 +1,10 @@
 <template>
   <ion-grid>
-    <ion-row v-for="(subCategory, index) in subCategories" :key="index">
-      <ion-col size="12" class="subtitle">{{ subCategory.name }}</ion-col>
+    <ion-row
+        v-for="(subCategory, index) in subCategories"
+        :key="index"
+    >
+      <ion-col class="subtitle" size="12">{{ subCategory.name }}</ion-col>
 
       <ion-col
           v-for="figure in subCategory.figures"

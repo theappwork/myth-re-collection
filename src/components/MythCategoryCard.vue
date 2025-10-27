@@ -1,6 +1,9 @@
 <template>
-  <ion-card :button="true" :disabled="category.total === 0"
-            :href="'/categories/' + category.slug">
+  <!-- REMINDER: do NOT use ion-card :href, use :router-link -->
+  <ion-card
+      :button="true"
+      :disabled="category.total === 0"
+      @click="onCardClick">
     <ion-card-header v-if="showTitle">
       <ion-card-title>{{ category.title }}</ion-card-title>
     </ion-card-header>
@@ -8,28 +11,35 @@
     <ion-img :src="category.coverPhoto" :alt="category.title"/>
 
     <ion-card-content>
-      <progress value="36" :max="category.total" :data-coming-soon="category.total === 0 ? true : undefined"/>
+      <progress
+          value="36"
+          :max="category.total"
+          :data-coming-soon="category.total === 0 ? true : undefined"
+      />
     </ion-card-content>
   </ion-card>
 </template>
-<script setup lang="ts">
-import {IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonImg} from "@ionic/vue";
 
-interface MythCategory {
-  title: string,
-  slug: string,
-  coverPhoto: string,
-  total: number
-}
+<script setup lang="ts">
+// TODO: get own collection total figures (replace fixed '36')
+import {IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonImg} from "@ionic/vue";
+import {useRouter} from "vue-router";
+import {inject} from "vue";
 
 interface Props {
   category: MythCategory,
   showTitle: boolean
 }
 
-const {category, showTitle = true} = defineProps<Props>()
+const {category, showTitle = true} = defineProps<Props>();
 
-// TODO: get own collection total figures (replace fixed '36')
+const router = useRouter();
+const {updateSelectedCategory} = inject<any>('selectedCategory');
+
+const onCardClick = () => {
+  updateSelectedCategory(category);
+  return router.push(`/categories/${category.slug}`);
+}
 </script>
 
 <style scoped>
@@ -56,9 +66,11 @@ ion-card ion-card-content progress:after {
   justify-content: center;
   font-weight: bold;
 }
+
 ion-card ion-card-content progress:not([data-coming-soon]):after {
   content: attr(value) ' / ' attr(max);
 }
+
 ion-card ion-card-content progress:after {
   content: 'Coming soon';
 }
